@@ -1,11 +1,12 @@
 \section{Introduction}
 \label{sec:introduction}
 
-The Standard Model (SM) of particles physics is a theory that explains almost all elementary particle. It has been able to predict new particles that experimentally have been confirmed; nerveless, is still many questions left unanswered that wait to be discovered. In the recent years, the particle physics studies turned its attention to signatures aimed at unusual final states which are difficult to measure or have not been considered yet \cite{318}.\\ 
+
+indent The Standard Model (SM) of particles physics is a theory that explains almost all elementary particle. It has been able to predict new particles that experimentally have been confirmed; nerveless, is still many questions left unanswered that wait to be discovered. In the recent years, the particle physics studies turned its attention to signatures aimed at unusual final states which are difficult to measure or have not been considered yet \cite{318}.\\ 
 
 In the present study, we focus on events where a single top quark is produced in association with a large amount of missing energy, where top quark that decays into a bottom quark and a W boson, and W boson decays into two light quarks. This kind of process is special due to productions with this final state are suppressed in the SM, turning into a suitable candidate for search new physics. In this work, we consider events with a specific example of a Z' field in order to study the flavor violation for a possible solution of Dark Matter (DM) problem of the SM \cite{319}. Searches for monotop associated with of DM matter production have been constrained for Fermilab Tevatron data by the CDF \cite{321} collaboration also for the CMS \cite{322} and ATLAS \cite{323}.\\
 
-In order to revisit and improve a previous analysis of the LHC sensitivity to monotops this analysis has been restricted to consider an integrated luminosity of \textbf{Preguntar que luminosidad} of data from proton-proton collisions at the center of mass of 13 TeV, collected by the CMS experiment in 2017.    \\
+In order to revisit and improve a previous analysis of the LHC sensitivity to monotops this analysis has been restricted to consider solely monotops decaying into a purely leptonically state with an integrated luminosity of 35.9 fb$^{-1}$ of data due to proton-proton collisions at the center-of-mass of 13 TeV, collected by the CMS experiment in 2016. 
 
 
 \clearpage

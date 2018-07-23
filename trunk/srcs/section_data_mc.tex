@@ -1,5 +1,143 @@
 \section{Data and Monte-Carlo Samples}
 \label{sec:data_mc}
 
+\noindent This study is based on the full 16 TeV datasets corresponding to a total integrated luminosity of 35.9fb$^{-1}$ recored in 2016. The analysis presented here has been carried out using the CMS official software framework for event generation, simulation and reconstruction. Data events have been registered during the 2016 data taking campaign from proton-proton collisions at a center-of-mass energy of 13TeV. Monte Carlo events have been produced by caring about reproducing faithfully the conditions of this data taking. Monte Carlo as well as data samples have been processed and analyzed within CMSSW\_8\_0\_29 release.
+\subsection{Dataset}
+We use the complete dataset recorded in 2016, corresponding to a total integrated luminosity of $36.5$ fb$^{-1}$. The data has been certified with the golden JSON file\\
+\verb|Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt|, \\ corresponding to runs 271\,036 -- 284\,044.
+
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|r|c|c|}
+  \hline
+  Dataset Name & luminosity  (fb$^{-1 }$) \\
+  \hline
+  /SingleElectron/Run2016B-03Feb2017\_ver1-v1/MINIAOD & 0 \\ 
+  /SingleElectron/Run2016B-03Feb2017\_ver2-v2/MINIAOD & 5.764  \\  
+  /SingleElectron/Run2016C-03Feb2017-v1/MINIAOD & 2.566 \\ 
+  /SingleElectron/Run2016D-03Feb2017-v1/MINIAOD & 4.227 \\  
+  /SingleElectron/Run2016E-03Feb2017-v1/MINIAOD & 4.009 \\ 
+  /SingleElectron/Run2016F-03Feb2017-v1/MINIAOD & 3.094 \\  
+  /SingleElectron/Run2016G-03Feb2017-v1/MINIAOD & 7.514 \\ 
+  /SingleElectron/Run2016H-03Feb2017\_ver2-v1/MINIAOD & 8.310 \\ 
+  /SingleElectron/Run2016H-03Feb2017\_ver3-v1/MINIAOD & 0.215 \\  \hline
+  /SingleMuon/Run2016B-03Feb2017\_ver1-v1/MINIAOD& 0 \\  
+  /SingleMuon/Run2016B-03Feb2017\_ver2-v2/MINIAOD & 5.784 \\ 
+  /SingleMuon/Run2016C-03Feb2017-v1/MINIAOD & 2.573 \\ 
+  /SingleMuon/Run2016D-03Feb2017-v1/MINIAOD & 4.248 \\ 
+  /SingleMuon/Run2016E-03Feb2017-v1/MINIAOD & 4.008 \\  
+  /SingleMuon/Run2016F-03Feb2017-v1/MINIAOD & 3.102 \\
+  /SingleMuon/Run2016G-03Feb2017-v1/MINIAOD & 7.540 \\
+  /SingleMuon/Run2016H-03Feb2017\_ver2-v1/MINIAOD & 8.391 \\
+  /SingleMuon/Run2016H-03Feb2017\_ver3-v1/MINIAOD & 0.215 \\ \hline
+\end{tabular}
+\caption{Summary of official datasets}
+\label{tab:DatasetsData}
+\end{center}
+\end{table}  
+
+\subsection{Monte-Carlo samples and simulation}
+The main background samples have been generated using \MADGRAPH 5~\cite{Alwall:2011uj}, interfaced to $\PYTHIA 6$  \cite{pythia6} for the hadronization of quarks and to \TAUOLA %\cite{tauola}
+for the decay of $\tau$.  The corresponding processes are \ttbar+jets,  $W$+jets and $Z$+jets. To increase the available MC statistics of the important $W$+jets sample, MC events are produced exclusively for additional partons ranging from 1 to 4. The \MADGRAPH production for $W$+jets without any addition parton at the matrix element level is constructed from the inclusive $W$+jets by selecting the $W$+jets processes using the event process ID. The corresponding cross-section is determined by simply subtracting the exclusive sample cross-sections to the inclusive one.The sub-dominant di-bosons samples are produced with pythia 6.
+Single top ($tW$ channel) samples are produced with the \POWHEG \cite{powheg} generator interfaced with \HERWIG \cite{herwig} for the hadronization of quarks. The Tab.\ref{tab:DatasetsMC} gives the cross section (computed at NNLO or approx. NNLO) and the dataset name for each physics process.
+
+\begin{center}
+\begin{table}[htbp]
+  \tiny
+  \vspace{0.2cm}
+  \begin{tabular}{|l|l|l|}
+    \hline
+   Process           &  Dataset name                              & cross section (pb) \\    \hline
+   W($l\nu$)+ jets & /WJetsToLNu\_HT-100To200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 1343 \\ 
+    & /WJetsToLNu\_HT-100To200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext2-v1 & 1343\\
+    & /WJetsToLNu\_HT-100To200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1343 \\
+    & /WJetsToLNu\_HT-200To400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 359.6 \\
+    & /WJetsToLNu\_HT-200To400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 359.6 \\
+    & /WJetsToLNu\_HT-200To400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext2-v1 & 359.6 \\
+    & /WJetsToLNu\_HT-400To600\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 48.85 \\
+    & /WJetsToLNu\_HT-400To600\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 48.85 \\
+    & /WJetsToLNu\_HT-600To800\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 12.05 \\
+    & /WJetsToLNu\_HT-600To800\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 &  12.05 \\
+    & /WJetsToLNu\_HT-800To1200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 5.501 \\
+    & /WJetsToLNu\_HT-800To1200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 5.501 \\
+    & /WJetsToLNu\_HT-1200To2500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1.329 \\
+    & /WJetsToLNu\_HT-1200To2500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 1.329 \\
+    & /WJetsToLNu\_HT-2500ToInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 0.03216 \\
+    & /WJetsToLNu\_HT-2500ToInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 0.03216\\
+    & /WJetsToLNu\_HT-70To100\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1319 \\ \hline
+    
+Z($ll$)+ jets & /DYJetsToLL\_M-50\_HT-100to200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 148.0 \\
+    & /DYJetsToLL\_M-50\_HT-100to200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 148.0 \\
+    & /DYJetsToLL\_M-50\_HT-1200to2500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 0.1514 \\
+    & /DYJetsToLL\_M-50\_HT-200to400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 40.94 \\
+    & /DYJetsToLL\_M-50\_HT-200to400\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 40.94 \\
+    & /DYJetsToLL\_M-50\_HT-2500toInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 0.003565 \\
+    & /DYJetsToLL\_M-50\_HT-400to600\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 5.497 \\
+    & /DYJetsToLL\_M-50\_HT-400to600\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 &  5.497 \\
+    & /DYJetsToLL\_M-50\_HT-600to800\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1.367 \\
+    & /DYJetsToLL\_M-50\_HT-70to100\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 175.3\\
+    & /DYJetsToLL\_M-50\_HT-800to1200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 0.6304\\ \hline
+    
+   QCD & /QCD\_HT1000to1500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1064 \\
+    & /QCD\_HT1000to1500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 1064 \\
+    & /QCD\_HT100to200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 27990000 \\
+    & /QCD\_HT1500to2000\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 121.5 \\
+    & /QCD\_HT1500to2000\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 121.5 \\
+    & /QCD\_HT200to300\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1735000 \\
+    & /QCD\_HT200to300\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 1735000 \\
+    & /QCD\_HT300to500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 366800 \\
+    & /QCD\_HT300to500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 366800\\
+    & /QCD\_HT500to700\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 29370 \\
+    & /QCD\_HT500to700\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v2 & 29370 \\
+    & /QCD\_HT50to100\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 278700000 \\
+    & /QCD\_HT700to1000\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 6524 \\
+    & /QCD\_HT700to1000\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 &  6524\\
+    & /QCD\_HT2000toInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 25.42 \\
+    & /QCD\_HT2000toInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 25.42 \\ \hline
+    
+Diboson & /WW\_TuneCUETP8M1\_13TeV-pythia8 & 118.7 \\
+    & /WW\_TuneCUETP8M1\_13TeV-pythia8\_ext1-v1 & 118.7 \\
+    & /WZ\_TuneCUETP8M1\_13TeV-pythia8 & 47.13 \\
+    & /WZ\_TuneCUETP8M1\_13TeV-pythia8\_ext1-v1 & 47.13 \\
+    & /ZZ\_TuneCUETP8M1\_13TeV-pythia8 & 16.523 \\
+    & /ZZ\_TuneCUETP8M1\_13TeV-pythia8\_ext1-v1 & 16.523 \\ \hline
+    
+ Single Top & /ST\_t-channel\_antitop\_4f\_inclusiveDecays\_13TeV-powhegV2-madspin-pythia8\_TuneCUETP8M1 & 80.95 \\
+     & /ST\_t-channel\_top\_4f\_inclusiveDecays\_13TeV-powhegV2-madspin-pythia8\_TuneCUETP8M1\_ext1-v1 & 80.95 \\
+     & /ST\_tW\_top\_5f\_inclusiveDecays\_13TeV-powheg-pythia8\_TuneCUETP8M1\_ext1-v1 & 35.85 \\ \hline
+     
+  $t\bar{t}$   & /TTJets\_DiLept\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 831.76*(1-0.68)*(1-0.68)\\
+     & /TTJets\_DiLept\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 831.76*(1-0.68)*(1-0.68) \\
+     & /TTJets\_SingleLeptFromTbar\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 831.76*0.68*(1-0.68) \\
+     & /TTJets\_SingleLeptFromTbar\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 831.76*0.68*(1-0.68) \\
+     & /TTJets\_SingleLeptFromT\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8\_ext1-v1 & 831.76*0.68*(1-0.68) \\
+     & /TTJets\_SingleLeptFromT\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 831.76*0.68*(1-0.68) \\ \hline
+     
+  \end{tabular}
+  \caption{Summary of official Monte Carlo samples used for background studies. All Monte Carlo samples have been processed with pile-up scenario consistent with Summer16 production and with the global tag xxxx.}
+  \label{tab:DatasetsMC}
+\end{table}
+\end{center}
+%\end{landscape}
+
+
+\subsection{Generation of signal events}
+Signal events are generated through a private production. First the LHE files are produced with the \MADGRAPH 5 generator \cite{Alwall:2011uj}(version 1.5.3 under CMSSW\_8\_0\_29). The monotop model, described in Sec. \ref{sec:theory_framework}, is implemented in \MADGRAPH by means of the FeynRules \cite{monotopWeb, Christensen:2008py, Alloul:2013bka} program. The showering of extra jets and the hadronization are then performed by the \PYTHIA 8 %\cite{pythia8}
+software (version 8.175 under CMSSW\_8\_x\_x) with the following configuration in Appendix %\ref{sec:appendix_pythia8}.
+
+For the case of FCNC, vector invisible particles are considered, while in the case of the resonant production mode, the resonant particle is a scalar and the invisible particle is a fermion (Sec. \ref{sec:theory_framework}). The coupling strength is by default set to $a=$0.1, but as the signal cross section evolves as $a^2$, it can then be re-scaled to different values of $a$. Then, those generated samples are given to an official full simulation of a CMS-like detector to simulate the particles/sub-detectors interactions (under CMSSW\_8\_0\_29). Configuration files for this step can be found in Appendix %\ref{sec:appendix_reco}. 
+
+Various mass points are considered depending on the production mode. They are given together with their cross-section in Fig \ref{fig:signal_FCNI}  when a coupling strength of $a=$0.1 is taken.
+
+
+\begin{figure}[h!]
+  \centering
+    \hspace{-1.0cm}
+    \includegraphics[scale=0.80]{figures/signal_FCNI.pdf}
+    \caption{}
+ \label{fig:signal_FCNI}
+\end{figure}
+
 
 \clearpage

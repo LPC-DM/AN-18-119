@@ -1,6 +1,19 @@
 \section{Signal Extraction and Results}
 \label{sec:signal_results}
 
+\noindent The distribution in all signal and control regions is performed thought binned likelihood fit. The transfer factors allows predict from CRs to SR, correlating the bins across all regions. The normalization and the shape of $t\bar{t}$ and W+jets background processes are estimated by deriving a scale factor between data and Monte Carlo in bins. 
+
+The fit is performed using $m_{T}$ as discriminatory variable between signal and background, though QCD, diboson, single top and Z+jets are not consider as control region in the fit because these are only sightly contaminating the signal and control regions. 
+
+\subsection{Transfer factors}
+
+The transfer factor (TF) extrapolates the MC predictions of the dominant background processes in the dedicated CRs into the SR. In other words, the TF is the ratio of the predicted performance in the SR and its predicted performance in the CR. To compute the TF is considered the relation between the number of events predicted in bin $i$ of a background process in the CR (obtained from the MC simulation) and the free parameter of the likelihood $\mu_{i}^{SR}$, which represent the number of the events in SR observed in $i$, thus obtaining $N_{i}^{CR}=\mu_{i}^{SR}/TF^{CR}_{i}$\cite{318}.
+
+The $t\bar{t}$ is one of the main backgrounds, in this analysis is necessary to calculate two different transfer factor. The first TF one requiired one lepton and two b-tagging. The second one considers two leptons and one b-tagging, in this case, the b-tagging is the same as SR this allow us to despise the b-tagging uncertainty, which allows us to cancel the ratio when the transfer factor is estimated.
+
+The W+jets is the second largest backgrounds which results from leptonically decaying W bosons where the lepton fulfill the acceptance or is not reconstructed. Transfer factors are derived from simulation that take into account the impact of lepton acceptance and efficiency and b tagging. 
+
+The single top, QCD, diboson and Z+jets estimated directly from Monte Carlo simulation in all regions following the official CMS prescription. 
 
 \clearpage
 

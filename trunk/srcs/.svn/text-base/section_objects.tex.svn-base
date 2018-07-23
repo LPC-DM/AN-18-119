@@ -1,5 +1,9 @@
-\section{Physics Objects}
-\label{sec:phy_obj}
+\section{The CMS experiment}
+\label{sec:CMS_intro}
+The Compact Muon Solenoid (CMS) \cite{301} detector, is a multipurpose apparatus deigned to study physics processes leading by proton-proton collisions. The central region is occupied by a superconducting solenoid which provides a magnetic field of 3.8 TeV parallel to the beam direction. The silicon pixel and strip trackers are responsible of measured the charge particles trajectories and covers a pseudorapidity region of $|\eta| <$2.5. The pseudorapidity region is extends to cover a range of $|\eta|<$3. The Cherenkov calorimeter hadronic able to cover $|\eta|<$5. The muon system located outside of CMS detector, is composed of gas-ionization detectors chambers for muon identification a measurement. The trigger system is sectioned in two level, the first level is designed to selected events on a range less than 4$\mu s$ employing the information provided by calorimeters and muon detectors, while the second level best known as a high-level-trigger-processor has the ability to decrease the event rate the several hundred HZ. 
 
+The particle-flow (PF) event algorithm has the ability to identify and reconstruct every single particle with the aid of information provided by CMS detector and sophistic computational tools. The energy muon is measured from all information collection of the tracker while the electron energy is determined from tracker (accountable for measure the electron momentum), the energy of the ECAL cluster and the energy sum photons coming from the electron tack. On the other hand the energy of a charged hadron that originate at the primary vertex, are measured from ECAL and HCAL energy deposits in concert with its momentum measured provided by tracker while the energy of neutral hadrons is inferred by the correction of energy measure of ECAL and HCAL. 
+
+We model the signal and background contributions by Monte Carlo (MC) simulation using MADGRAPH5\_aMC via FEYNRULES. Events for the flavor-changing neutral current (FCNC) production are estimated at next-to-leading (NLO) order pursing the perturbation theory in quantum chromodynamics (QCD), the renormalization and factorization scales are established in relation with transverse mass of the heavy particles production. 
 
 \clearpage

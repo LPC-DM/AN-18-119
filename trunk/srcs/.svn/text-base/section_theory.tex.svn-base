@@ -7,29 +7,32 @@ As a result, the production of monotop state can occur by means of two different
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.60]{figures/theory_mtop.pdf}
+\includegraphics[scale=0.60]{figures/Diagram.png}
 \caption{Representative Feynman diagrams leading to monotop signatures, through the resonant exchange of a colored scalar field S (left) and via a flavor-changing interaction with a vector field V (right). In these two examples, the missing energy is carried by the V and $\chi$ particles}
 \end{figure}
 
 Examples of the first class is possible to consider an R-rapidity violating supersymmetry where the intermediate particle is a top quark decaying into a top plus a lightest neutralino or in SU(5) theories where a vector leptoquark $V$ decays into a top quark and a neutrino. The second class has the possibility to explain possible solutions of dark matter problem via flavor-violating couplings of a bosonic mediator.
 
-The present study focuses on the flavor-changing neutral current (FCNC) model where the main signatures associated with monotop production are associated with leptonically decaying top quarks. This channel is fully reconstructable due to this has the largest branching fraction of 67\%. Starting from the Standard Model, in a simplified model approach, the monotop production mechanism could be described FCNC production by: 
 
+The present study focuses on the flavor-changing neutral current (FCNC) model where the main signatures associated with monotop production are associated with leptonically decaying top quarks. This channel is fully reconstructable due to this has the largest branching fraction of 67\%. Starting from the Standard Model, in a simplified model approach, the monotop production mechanism could be described FCNC production by \cite{319,320,322}: 
+
+%\begin{equation}
+%\mathcal{L}_{int} = V_{\mu }\bar{\chi}\gamma^{\mu}(g^{V}_{\chi}+g^{A}_{\chi}\gamma ^{5})\chi + \bar{q}_{u}\gamma^{\mu}(g^{V}_{u}+g^{A}_{u}\gamma^{5})q_{u}V_{\mu}+\bar{q_{d}}\gamma^{\mu}(g^{V}_{d}+g^{A}_{d}\gamma ^{5})q_{u}V_{\mu} + h.c.
+%\end{equation
 
 \begin{equation}
-\mathcal{L}_{int} = V_{\mu }\bar{\chi}\gamma^{\mu}(g^{V}_{\chi}+g^{A}_{\chi}\gamma ^{5})\chi + \bar{q}_{u}\gamma^{\mu}(g^{V}_{u}+g^{A}_{u}\gamma^{5})q_{u}V_{\mu}+\bar{q_{d}}\gamma^{\mu}(g^{V}_{d}+g^{A}_{d}\gamma ^{5})q_{u}V_{\mu} + h.c.
+\mathcal{L}_{int} = Z^{'}_{\mu }\bar{\chi}\gamma^{\mu}(g^{V}_{\chi}+g^{A}_{\chi}\gamma ^{5})\chi + \bar{q}_{u}\gamma^{\mu}(g^{V}_{u}+g^{A}_{u}\gamma^{5})q_{u}Z^{'}_{\mu}+\bar{q_{d}}\gamma^{\mu}(g^{V}_{d}+g^{A}_{d}\gamma ^{5})q_{u}Z^{'}_{\mu} + h.c.
 \end{equation}
 
-where "$h.c$"  refers to the Hermitian conjugate of the preceding terms in the Lagrangian. We depict the heave mediator as $V$ and $\chi$ is denoted the DM particles, which are Dirac Fermions. On the other side, the $q_{u}$ and $q_{d}$ in terms of interaction quark-$V$, represent three generations of up-quark ($q_{u}$) and down-type ($q_{d}$),  The coupling $g_{\chi}^{V}$ and $g_{\chi}^{A}$ represent the vector and axial vector-coupling between $\chi$ and $V$, respectively. The interactions among $V$ and $u$, $c$, and top quarks is modeled via two 3 $\times$ 3 flavor matrices vector- and axial vector-coupling, $g_{V}^{u}$ and $g_{A}^{u}$ respectively, these matrices play an important role due to the monotop production becomes possible owing to their off-diagonal elements. In order to preserve $SU(2)_{L}$ symmetry, the down-type couplings $g_{V}^{d}$ and $g_{A}^{d}$ must be analogous and satisfied:
+\noindent where "$h.c$"  refers to the Hermitian conjugate of the preceding terms in the Lagrangian. We depict the heave mediator as $Z^{'}$ and $\chi$ is denoted the DM particles, which are Dirac Fermions. On the other side, the $q_{u}$ and $q_{d}$ in terms of interaction quark-$V$, represent three generations of up-quark ($q_{u}$) and down-type ($q_{d}$),  The coupling $g_{\chi}^{V}$ and $g_{\chi}^{A}$ represent the vector and axial vector-coupling between $\chi$ and $Z'$, respectively. The interactions among $Z'$ and $u$, $c$, and top quarks is modeled via two 3 $\times$ 3 flavor matrices vector- and axial vector-coupling, $g_{V}^{u}$ and $g_{A}^{u}$ respectively, these matrices play an important role due to the monotop production becomes possible owing to their off-diagonal elements. In order to preserve $SU(2)_{L}$ symmetry, the down-type couplings $g_{V}^{d}$ and $g_{A}^{d}$ must be analogous and satisfied:
 
 \begin{equation}
 g_{V}^{u}-g_{A}^{u} = g_{V}^{d} - g_{A}^{d}
 \end{equation}
 
-Considering the above constraint (2-2), for convenience we assume $g_{V}^{u}$ = $g_{V}^{d}$ =  $g_{V}^{q}$ and $g_{A}^{u}$ = $g_{A}^{d}$ =  $g_{A}^{q}$. Furthermore in order to yield the production of monotop state is required the only nonzero elements of $g_{V}^{u}$ and $g_{A}^{u}$ are assumed to be those between the first and third generation. Assuming QCD interactions to be flavor-conserving, as in the SM, in this sense the flavor-changing neutral interactions derive from a neutral weakly interaction.  
+Considering the above constraint (2-2), for convenience we assume $g_{V}^{u}$ = $g_{V}^{d}$ =  $g_{V}^{q}$ and $g_{A}^{u}$ = $g_{A}^{d}$ =  $g_{A}^{q}$. Furthermore in order to yield the production of monotop state is required the only nonzero elements of $g_{V}^{u}$ and $g_{A}^{u}$ are assumed to be those between the first and third generation.
 
-\subsection{Flavor-Changing Neutral Current Production}
-In the following study, we are considering a mediator $V$ with spin 1 by exploring the undetectable vector boson associated with a single top signal and dark matter candidates. Considering the mediator $V$ lighter than the top quark ($m_{V} < m_{t}$) or when the mediator is heavier ($m_{V} > m_{t}$). Consider a heavy mediator $V$ in comparison with top quark, guarantee that mediator is not long lived as it can decay into a top quark. This makes possible include a decay channel into an undetectable state to be liable to noted as dark matter candidate \cite{324}.
+It must be highlighted that in the current study is  being considered a mediator $Z'$ with spin 1 by exploring the undetectable vector boson associated with a single top signal and dark matter candidates. The statement of mediator $Z'$ compels us to establish two possible scenarios, where the mediator could be lighter of heavier in contrast to the top quark. In the first scenario consider a heavy mediator $Z'$ in comparison with top quark, guarantee that mediator is not long lived as it can decay into a top quark. This makes possible include a decay channel into an undetectable state to be liable to noted as dark matter candidate, whilst in the second case when $Z'$ is lighter, there to be a kinesthetically forbidden in all possible decays modes into a top and lighter quark. In the minimal case, at three-level, the mediator could decay into a multibody final states i.e $Z'\rightarrow u\bar{b}W^{-}$ or $Z'\rightarrow \bar{u}bW^{+}$, furthermore when $m_{Z'}$ is lighter than $m_{W}$ the $W$ boson is virtual \cite{324}. 
 
 
 \clearpage

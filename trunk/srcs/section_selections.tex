@@ -1,5 +1,100 @@
-\section{Signal and Control Region Selections}
-\label{sec:sr_cr_sel}
+\section{Event Selection and Backgrounds}
 
+\label{event_selection}
+\noindent In the past the hadronic monotops studies have recived particular attention due to this signature is cleaner than the leptonic mode. However, the study of the leptonic mode is considered defiance since to the small branching fraction of the top quark into a leptonic final state and the fact of there are two different sources of transverse energy, moreover the leptonic mode backgrounds are cleaner so that they can be easily simulated and controlled. In this study the events of interest involve the presence of one jet tagged as result of $b$-quark in association of $W$ boson with a final leptonic state, reconstructing signatures with this rather particular structure is challenging due to the QCD multijet backgrounds. The selected jet candidate are required specific geometric acceptance such as a pseudorapidity satisfying $|\eta ^{j}| < 2.5$ with a transverse momentum $p_{T}> 25$ GeV for $b$-tagged jets and leptons. For reconstruct jets the anti-$k_{t}$ algorithm is implemented \cite{325} with $\Delta R$=0.4, where $\Delta R = \sqrt{\Delta \eta ^{2}+\Delta \phi ^{2}}$, $\eta$ being the azimuthal angle with respect to the beam direction. Jets stemming from $b$ quarks are identified using a secondary-vertex-tagging algorithm (CSV) \cite{326}, in this sense required exactly one b-tagged jet allows to reject $W$+jets and $t\bar{t}$ events. However, the resolution of jet in the simulation is not fully reproduced the observe resolution in the data, for this reason the $p_{T}$ resolution of jets is corrected in simulation following the correction from \cite{327}.
+
+In addition contemplate events that involve a single top quark leading consider a significant amount of missing transverse energy( $\not{E_{T}}$) originating from a invisible new state, where estimate $\not{E_{T}}$ correspond to the sum of the transverse momenta of all visible objects. Nevertheless, the main discriminatory variable is the transverse mass ($M_{T}$) of lepton. The $M_{T}$ is quantity which is invariant under Lorentz boost along the z direction, its definition can be rewritten in terms of the transverse energy and $\not{E}_{T}$ as $M^{2}_{T}=(E_{T}(l)-\not{E_{T}})^{2}-(p_{x}(l)-\not{E_{x}})^{2}-(p_{y}(l)-\not{E_{y}})^{2}$ where $p_{x}$ and $p_{y}$ are the momentum perpendicular to the beam pipe, and $l$ plus $\not{E}_{T}$ corresponds to the decay products of a particle with $M$, furthermore the end-point of the $M_{T}$ spectrum is $M^{max}_{T}=M$\cite{328}, this particular feature is manifested in the main backgrounds, though the signal does not present this as a result of its two sources of missing energy, allowing the $M_{T}$ becomes into a crucial point for distinguishing between signal and background. In this specific analysis we are consider the $M_{T}>=160$. 
+
+\section{Principal Backgrounds}
+\noindent After the cuts as discussed below \ref{event_selection}, the selection of main backgrounds are stricter correlated with the $M_{T}$. This sections is dedicated to show the importance of the $M_{T}$ for each background. The specific situations of every backgrounds are listed bellow;
+
+\begin{itemize}
+\item $\mathbf{t\bar{t}:}$ The largest background comes from $t\bar{t}$ pairs. In the semi and di-leptonic decay mode the spectrum of $M_{T}$ meets the characteristic of an end point $M_{T}^{max}=m_{W}$, since this condition is not applied to missing energy coming from misreconstructed jet, meaning the $M_{T}$ becomes unconstrained. 
+\item \textbf{single top:} This is a subdominant background because it is irreducible, up to a jet that could come from ISR. Remembering that our main discriminatory variable is $M_{T}$ the sole top process which has a large $M_{T}$ comes from of the production of $tW$ ($pp\rightarrow tW\rightarrow bll\nu \nu$). If during the process a lepton is missed then $M_{T}$ is a variable which is not constrained by $m_{W}$, in this way this process contribute to the background, however, due to has a low cross-section coverts it into the not largest background.
+\item $\mathbf{W+jets:}$ The largest contribution in relation with this process is strict correlated with the cross-section associated production of $W$ plus light jets. Nevertheless, these process required a fake b-tagged jet. In order to keep under control this background depending principally on the b-tagging algorithm that is implemented, in ATLAS and CMS analyses the b-mistag rate is the order to  1/100 and 1/1000, and these are correlated with the duty point.
+\item \textbf{Diboson:} In particular this background is suppressed compared to the previous ones, due to the difficulty of simulate a $blE_{T}$ final state. The process $W^{+}W^{-}$ has the largest cross-section, and can only contribute if one $W$ decay hadronically and the other one leptonically, this means that a $b$-jet can only originate from one of the $W$ decays. In another case when we consider the $WZ$ production is necessary to involve a leptonic $W$ decay and a mistagged jet or a missing b jet from the $Z\rightarrow b\bar{b}$ decay in order to contribute. The last process is $ZZ$ which has the smallest cross-section, in this case one $Z$ should decay hadronically and the other one leptonically in order to fulfill the selection cuts; furthermore, the leptons should be missed and must also should be a mistagged jet or a missing b jet deriving from the $Z$ hadronic mode. In general, generate events that consider values $M_{T}>m_{W}$ are not likely, for this reason this background is almost entirely negligible.
+\item \textbf{QCD:} The background deriving from QCD are consider neglected since that the reconstructed leptons of these processes can only succeed throughout misidentified jets. Moreover, consider a high $p_{T}$ misreconstructed jest guarantees a large missing transverse energy. Considering the signal characteristics, a hight $p_{T}$ jet veto has the faculty of suppresses the QCD missing energy turns out to very effective in neglecting this background to the leptonic monotop signature.
+\item $\mathbf{Zt/Z\bar{t}:}$ This kind if background becomes complete negligible in comparison to the last ones. When we consider events where $Z\rightarrow \nu \bar{\nu}$ due to the low cross-section approximate value of 0.24pb and the selection cuts, this process is despicable. 
+\end{itemize}
+
+\section{Signal estimation}
+
+\noindent After consider the selection described in the section \ref{event_selection} the dominant backgrounds are $t\bar{t}$ and $W(lv)$+jets. It is important to highlight that this study is considering two signal region due to we are looking for leptonic monotop signature allowing us to consider two possible final states, one which involves a muon and the other one an electron as a final signature.
+
+The main backgrounds in the SR are constrained on the transfer factors and the theoretical and experimental uncertainties, which shall be mentioned separately. Each CR is split into tight categories, using the same considerations of the SR. Single top quark, diboson, z+jets and QCD multijet backgrounds are not constrained by the CR fit, these are estimated using MC simulation.     
+
+\subsection{Control Regions}
+As was mentioned previously in section \ref{event_selection} the pre-selection, applied for all regions is:
+
+\begin{itemize}
+\itemsep=0pt\topsep=0pt\partopsep=0pt
+\item nTau = 0 
+\item at least a jet with jetPt$ > $25 and $|\eta|<$2.4
+\item $m_{T}>$ = 160
+\end{itemize}
+
+\subsection{W+jets control region}
+\itemsep=0pt\topsep=0pt\partopsep=0pt
+The W+jets control region is defined from the pre-selection region 
+\begin{itemize}
+\item $W(e\nu)$ + jets $\rightarrow$ exactly one tight lepton and has to correspond to one tight electron.\\ 
+At lest a b jet with jetCSV$>$0.8 and $|\eta|<$2.4, the selected jet should not pass CSV b tagging selection. 
+\item $W(\mu\nu)$ + jets $\rightarrow$ exactly one tight lepton and has to correspond to one tight muon.\\ 
+At lest a b jet with jetCSV$>$0.8 and $|\eta|<$2.4, the selected jet should not pass CSV b tagging selection.\\
+\end{itemize}
+
+The purity of W+jets events after the selection is around 90\%, and the contamination of a potential signal is found to be negligible.
+
+\subsection{ttbar  control region}
+\itemsep=0pt\topsep=0pt\partopsep=0pt
+The $t\bar{t}$ control region is defined from the preselection in also requiring:
+\begin{itemize}
+\item $t\bar{t}$ (one lepton) $\rightarrow$ exactly one tight lepton and has to correspond to one tight electron or one tight muon.\\
+At lest a b jet with jetCSV$>$0.8 that passes two CSV b tagging selection.
+\item $t\bar{t}$ (dilepton) $\rightarrow$ exactly two loose leptons and at least a b jet with jetCSV$>$0.8 that passes one CSV b tagging selection.
+	\begin{itemize}
+	\item dielectron $\rightarrow$ exactly two loose electrons and one has to be a tight electron
+    \item dimuon $\rightarrow$ exactly two loose muon and one has to be a tight muon
+	\end{itemize}
+\end{itemize}
+
+\subsection{Signal event selection}
+As previously mentioned in this analysis is considering two signal region. In general the signals region is defined from the pre-selection in adding the following cuts for each case:
+\itemsep=0pt\topsep=0pt\partopsep=0pt
+\begin{itemize}
+\item signal (electron) $\rightarrow$ exactly one tight lepton and has to correspond to one tight electron. \\
+At least one b jet and one b-tagged jet with CSV.
+\item signal (muon) $\rightarrow$ exactly one tight lepton and has to correspond to one tight muon. \\
+At least one b jet and one b-tagged jet with CSV.
+\end{itemize}
+
+\begin{table}[h!]
+  \begin{center}
+    \label{tab:table1}
+    \begin{tabular}{lcrrrr} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{Region} & & \textbf{$N_{e}$}&\textbf{$N_{\mu}$}&\textbf{$N_{b-tag}$} & anti-kT\\ \hline
+           Signal & $t \rightarrow e\nu b$ & 1 & 0 & 1 & 1\\
+           $t \rightarrow Wb \rightarrow {l}\nu b$ & $t \rightarrow \mu \nu b$  & 0 & 1 & 1 & 1\\
+ \hline
+     \textbf{Primary backgrounds} &  &  &  &  &\\ \hline 
+                 $W \rightarrow {l}\nu$ +jets & & - & - & 0 & 0\\ 
+                % $Z \rightarrow ll$ & & &  & \\ 
+                 $t\bar{t} \rightarrow {b}qq'+b{l}\nu $ & & - & - & 2 &2 \\ 
+                 $t\bar{t} \rightarrow b{l}\nu+b{l}\nu $ & & - & - & 2 &2 \\ \hline
+               & Contributions &  &  &  &\\ \hline
+        Single-$e-t$ (b-tagged)&  $ t\bar{t}\rightarrow bqq^{'}+be\nu$ & 1 & 0 & 2 & 2\\
+        Single-$\mu-t$ (b-tagged)&  $ t\bar{t}\rightarrow bqq^{'}+b\mu\nu$ & 0 & 1 & 2 & 2\\
+
+         Single-$e-W$ & $W \rightarrow e\nu$ + jets & 1 & 0 & 0 & 0\\
+        Single-$\mu-W$ & $W \rightarrow \mu\nu$ + jets & 0 & 1 & 0 & 0\\
+        Dielectron&  $ \rightarrow ee$ & 2 & 0 & - & -\\
+        Dimuon&  $ \rightarrow \mu \mu$ & 0 & 2 & - & -\\ \hline
+
+    \end{tabular}
+  \end{center}
+  \caption{Summary of the selection criteria for SR and CRs. Symbols \textbf{$N_{e}$} and \textbf{$N_{\mu}$} refer to the number of selected electrons and muons, respectively. The number of b-tagged jets is denoted \textbf{$N_{b-tag}$}}
+\end{table}
+
+A summary of the selection criteria for the SR and for all of the CRs is given in Table 1. 
 
 \clearpage

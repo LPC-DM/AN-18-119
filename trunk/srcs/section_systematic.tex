@@ -1,6 +1,41 @@
-\section{Scale Factors and Systematics Uncertainties}
+\section{Systematic uncertainties}
 \label{sec:sf_systematics}
 
+Systematic uncertainties are implemented in the profile likelihood ratio as nuisance parameters constrained in the fit. Uncertainties are modeled as a standard Gaussian distribution. The systematic variations are built in Fitting code, for nominal and varied samples, the varied histograms can be built applying weights to nominal cases. The general uncertainties description are detailed in the following. 
 
+\begin{itemize}
+\item \textbf{Experimental systematic uncertainties:} The main sources of these class of uncertainties is the jet energy scale (JES), this is applied to account for difference data and MC simulation. Furthermore, we are considering the flavor tagging uncertainty, which is employing on the modelling of the b-tagging efficiency. In this section the uncertainties associated to the lepton energy scales, energy resolution, reconstruction and identification efficiencies are considering, besides that the modelling of pile-up and integrated luminosity is negligible. 
+
+\item \textbf{Theoretical systematic uncertainties:} This uncertainties corrections are  concerns mainly to cross section, which is not relevant for the analysis, however should be consider in diboson samples due to this is normalized by the predicted cross section. The uncertainty form MC generator is calculated comparing samples produced with different generators  for every background process. In a proton-proton collision the cross section uncertainties are derived using the PDF functions, which are determined experimentally. Due to the PDF considerations in MC generators enables to get small effects on the background acceptance. 
+\end{itemize}
+
+Due to the signals model are computed at NLO by MadGraph generator, the uncertainties on the ratio of the NLO to LO cross section values (k-factor) are estimated by comparing with k-factor computed in PYTHIA, and combined with uncertainties associated to the normalization and factorization scales, and PDF setup. The summary of the systematic uncertainties is presented on Table 2.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{ l r }
+\hline
+ Source & Relative uncertainty (\%)  \\ \hline 
+ Jet energy scale & \\
+ Jet energy correction & 1.04\\
+ Tag of b jets & 1.0 \\
+ Miss tag of b jets & 1.0 \\
+ Tracker ($e$ and $\mu$) & 1.005 \\
+ Trigger ($e$ and $\mu$) & 1.01 \\ 
+ Scale factor ($e$ and $\mu$)& 1.01\\ \hline
+ Background normalization & \\ \hline
+ Single top &1.2 \\
+ Diboson & 1.2 \\
+ $W$+jets & 1.3\\
+ QCD & 2.0\\
+ $t\bar{t}$ & 1.3\\
+ Z$ll$ & 1.2 \\ \hline
+ Heavy-flavor fraction & \\ \hline
+ $W$-jet & 0.95 \\
+ $Z$-jet & 0.95 \\ \hline
+\end{tabular}
+\end{center}
+\caption{List of non-negligible uncertainties contributions}
+\end{table}
 
 \clearpage
